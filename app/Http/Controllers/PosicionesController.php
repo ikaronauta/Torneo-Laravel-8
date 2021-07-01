@@ -23,7 +23,7 @@ class PosicionesController extends Controller
      */
     public function create()
     {
-        //
+        return view('posiciones.create');
     }
 
     /**

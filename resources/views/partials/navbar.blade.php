@@ -12,8 +12,8 @@
             Municipios
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="municipios">Ver municipios</a>
-            <a class="dropdown-item" href="#">Nuevo municipio</a>
+            <a class="dropdown-item" href="/municipios">Ver municipios</a>
+            <a class="dropdown-item" href="municipios/create">Nuevo municipio</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -21,7 +21,7 @@
             Equipos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="equipos">Ver equipos</a>
+            <a class="dropdown-item" href="/equipos">Ver equipos</a>
             <a class="dropdown-item" href="equipos/create">Nuevo equipo</a>
           </div>
         </li>
@@ -30,8 +30,8 @@
               Jugadores
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="jugadores">Ver jugadores</a>
-              <a class="dropdown-item" href="#">Nuevo jugador</a>
+              <a class="dropdown-item" href="/jugadores">Ver jugadores</a>
+              <a class="dropdown-item" href="/jugadores/create">Nuevo jugador</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -39,8 +39,8 @@
               Posiciones
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="posiciones">Ver posiciones</a>
-              <a class="dropdown-item" href="#">Nueva posicion</a>
+              <a class="dropdown-item" href="/posiciones">Ver posiciones</a>
+              <a class="dropdown-item" href="posiciones/create">Nueva posicion</a>
             </div>
           </li>
       </ul>

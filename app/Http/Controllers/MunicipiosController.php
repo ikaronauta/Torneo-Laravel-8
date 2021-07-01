@@ -23,7 +23,7 @@ class MunicipiosController extends Controller
      */
     public function create()
     {
-        //
+        return view('municipios.create');
     }
 
     /**

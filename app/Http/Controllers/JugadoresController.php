@@ -6,6 +6,43 @@ use Illuminate\Http\Request;
 
 class JugadoresController extends Controller
 {
+    private $jugadores = array(
+        array(
+            'foto' => 'http://ximg.es/60x70/000/fff',
+            'nombre' => 'Francisco Perez',
+            'posicion' => 'Delantero',
+            'numero' => '8',
+            'equipo' => 'Once Caldas',
+        ),
+        array(
+            'foto' => 'http://ximg.es/60x70/000/fff',
+            'nombre' => 'Mario Perez',
+            'posicion' => 'Defensa',
+            'numero' => '4',
+            'equipo' => 'Nacional',
+        ),
+        array(
+            'foto' => 'http://ximg.es/60x70/000/fff',
+            'nombre' => 'Ramiro Suan',
+            'posicion' => 'Arquero',
+            'numero' => '3',
+            'equipo' => 'Millonarios',
+        ),
+        array(
+            'foto' => 'http://ximg.es/60x70/000/fff',
+            'nombre' => 'Camilo Marin',
+            'posicion' => 'Delantero',
+            'numero' => '7',
+            'equipo' => 'Once Caldas',
+        ),
+        array(
+            'foto' => 'http://ximg.es/60x70/000/fff',
+            'nombre' => 'Robinson Fernandez',
+            'posicion' => 'Defensa',
+            'numero' => '12',
+            'equipo' => 'Nacional',
+        )
+    );
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +50,7 @@ class JugadoresController extends Controller
      */
     public function index()
     {
-        return view('jugadores.index');
+        return view('jugadores.index')->with('jugadores', $this->jugadores);
     }
 
     /**
@@ -23,7 +60,7 @@ class JugadoresController extends Controller
      */
     public function create()
     {
-        //
+        return view('jugadores.create');
     }
 
     /**
@@ -45,7 +82,9 @@ class JugadoresController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('jugadores.show')
+            ->with('id', $id)
+            ->with('jugador', $this->jugadores[$id]);
     }
 
     /**
@@ -56,7 +95,7 @@ class JugadoresController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('jugadores.show')->with('id', $id);
     }
 
     /**
